@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg" alt="A beautiful landscape from Pexels">
+
+    <h2>Another Image</h2>
+    <img src="https://images.pexels.com/photos/123929/pexels-photo-123929.jpeg" alt="A scenic view of mountains from Pexels">
+
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Vick</td>
+                <td>123 Main St</td>
+                <td>(555) 123-4567</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Max</td>
+                <td>456 Elm St</td>
+                <td>(555) 987-6543</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Macnil</td>
+                <td>789 Maple St</td>
+                <td>(555) 555-5555</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>Cris Brown</td>
+                <td>101 Pine St</td>
+                <td>(555) 444-4444</td>
+                <td>cris@example.com</td>
+            </tr>
+            <tr>
+                <td>Charlie Mike</td>
+                <td>202 Oak St</td>
+                <td>(555) 333-3333</td>
+                <td>charlie@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">KENYA</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
